@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "drogon-blueprint",
+  "version-string": "0.1.0",
+  "description": "High-performance C++ REST API framework with dynamic CRUD generation",
+  "dependencies": [
+    {
+      "name": "drogon",
+      "features": ["postgres", "mysql", "sqlite3", "orm", "ctl"]
+    },
+    "jwt-cpp",
+    {
+      "name": "mimalloc",
+      "features": ["override"]
+    }
+  ]
+}

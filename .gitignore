@@ -1,0 +1,56 @@
+# Build
+build/
+cmake-build-*/
+out/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.cache/
+compile_commands.json
+
+# Secrets
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Uploads
+uploads/
+
+# vcpkg (installed packages are local to build)
+vcpkg_installed/
+
+# Compiled objects
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# Node.js (benchmark dependencies)
+node_modules/
+package-lock.json
+
+# Test artifacts
+*.db
+
+# Release build directory
+build-release/
+
+# Internal tooling
+.claude/
+.planning/
+
+# Benchmark report (internal only)
+BENCHMARK-REPORT.md

@@ -1,0 +1,42 @@
+# Framework Benchmark Results — Monday 16 March 2026 11:16:36 PM +0530
+
+
+## single_row_c10 (n=2000, c=10)
+drogon                         | drogon       | 18997.14 RPS | mean=0.526ms | p50=   1ms p95=   1ms p99=   1ms max=   2ms | failed=0
+fastify                        | fastify      |   137.31 RPS | mean=72.827ms | p50=  73ms p95=  81ms p99=  85ms max=  97ms | failed=0
+fastapi                        | fastapi      |   130.73 RPS | mean=76.494ms | p50=  74ms p95= 109ms p99= 193ms max= 329ms | failed=0
+
+## single_row_c50 (n=3000, c=50)
+drogon                         | drogon       | 24958.82 RPS | mean=2.003ms | p50=   2ms p95=   3ms p99=   5ms max=   7ms | failed=0
+fastify                        | fastify      |   133.88 RPS | mean=373.474ms | p50= 359ms p95= 382ms p99= 779ms max= 953ms | failed=0
+fastapi                        | fastapi      |   136.88 RPS | mean=365.288ms | p50= 363ms p95= 394ms p99= 690ms max= 986ms | failed=0
+
+## single_row_c100 (n=5000, c=100)
+drogon                         | drogon       | 20511.81 RPS | mean=4.875ms | p50=   3ms p95=   6ms p99=  10ms max=  48ms | failed=0
+fastify                        | fastify      |   127.53 RPS | mean=784.117ms | p50= 716ms p95=1399ms p99=1597ms max=1723ms | failed=0
+fastapi                        | fastapi      |   136.54 RPS | mean=732.371ms | p50= 722ms p95=1063ms p99=1409ms max=2101ms | failed=0
+
+## 10_rows_c50 (n=2000, c=50)
+drogon                         | drogon       |  8058.70 RPS | mean=6.204ms | p50=   3ms p95=   7ms p99=  16ms max= 101ms | failed=0
+fastify                        | fastify      |    35.12 RPS | mean=1423.540ms | p50=1360ms p95=1896ms p99=2282ms max=2390ms | failed=0
+fastapi                        | fastapi      |    36.20 RPS | mean=1381.181ms | p50=1344ms p95=2141ms p99=2541ms max=6480ms | failed=0
+
+## 100_rows_c10 (n=1000, c=10)
+drogon                         | drogon       |  1982.03 RPS | mean=5.045ms | p50=   3ms p95=   8ms p99=  12ms max= 104ms | failed=0
+fastify                        | fastify      |    37.93 RPS | mean=263.614ms | p50= 248ms p95= 350ms p99= 585ms max= 670ms | failed=0
+fastapi                        | fastapi      |    33.46 RPS | mean=298.831ms | p50= 299ms p95= 431ms p99= 595ms max= 683ms | failed=0
+
+## 100_rows_c50 (n=2000, c=50)
+drogon                         | drogon       |  2768.62 RPS | mean=18.060ms | p50=  15ms p95=  40ms p99=  49ms max=  54ms | failed=0
+fastify                        | fastify      |    34.60 RPS | mean=1445.194ms | p50=1377ms p95=1910ms p99=2382ms max=2487ms | failed=0
+fastapi                        | fastapi      |    34.04 RPS | mean=1469.012ms | p50=1412ms p95=2191ms p99=2782ms max=4810ms | failed=0
+
+## 1000_rows_c10 (n=500, c=10)
+drogon                         | drogon       |   250.92 RPS | mean=39.854ms | p50=  25ms p95=  76ms p99=  99ms max= 260ms | failed=0
+fastify                        | fastify      |    39.07 RPS | mean=255.948ms | p50= 252ms p95= 308ms p99= 331ms max= 345ms | failed=0
+fastapi                        | fastapi      |    22.32 RPS | mean=447.977ms | p50= 406ms p95= 635ms p99=1477ms max=1869ms | failed=0
+
+## 10000_rows_c5 (n=50, c=5)
+drogon                         | drogon       |    13.35 RPS | mean=374.647ms | p50= 236ms p95= 515ms p99= 879ms max= 879ms | failed=0
+fastify                        | fastify      |    32.70 RPS | mean=152.913ms | p50= 146ms p95= 179ms p99= 183ms max= 183ms | failed=0
+fastapi                        | fastapi      |     2.02 RPS | mean=2477.979ms | p50=2065ms p95=4200ms p99=4705ms max=4705ms | failed=0
