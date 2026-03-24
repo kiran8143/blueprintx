@@ -292,6 +292,7 @@ All configuration is via `.env` (see [.env.example](.env.example) for the full r
 | `JWT_EXPIRY_SECONDS` | `3600` | Token lifetime |
 | `REDIS_HOST` | — | Redis host (optional — disables L2 if empty) |
 | `CORS_ORIGINS` | — | Comma-separated allowed origins |
+| `CACHE_ENABLED` | `true` | Set to `false` to disable all caching |
 | `LOG_LEVEL` | `INFO` | `TRACE`, `DEBUG`, `INFO`, `WARN`, `ERROR` |
 
 ---
@@ -329,7 +330,7 @@ All responses use a consistent JSON envelope:
 ## Health Check
 
 ```bash
-curl http://localhost:8080/api/health
+curl http://localhost:8080/health
 ```
 
 ```json
